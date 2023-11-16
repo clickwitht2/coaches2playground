@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Fighting Choice</string>
+    <string name="greeting_message_from_coach_to_students">Welcome Students...</string>
+    <string name="greeting_message_from_clubs_to_students">Welcome to Fighting Choice Clubs</string>
+</resources>

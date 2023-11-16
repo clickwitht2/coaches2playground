@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="175dp"
+    android:layout_margin="20dp"
+    app:cardBackgroundColor="@color/fighting_choice_black_gray"
+    app:cardCornerRadius="32dp"
+    app:cardElevation="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true">
+
+        <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/coaches_left_panel_card_layout"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/fighting_choice_black_light"
+            app:cardCornerRadius="32dp"
+            app:cardElevation="20dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/fc_coach_picture_circular"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                app:shapeAppearanceOverlay="@style/Circular" />
+
+            <TextView
+                android:id="@+id/message_from_coach_to_students"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="52dp"
+                android:maxLines="1"
+                android:text="@string/greeting_message_from_coach_to_students"
+                android:textColor="@color/fighting_choice_orange"
+                android:textSize="5dp" />
+
+            <ImageView
+                android:id="@+id/fc_coach_intro_gif"
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="62dp"
+                android:gravity="center_horizontal" />
+        </androidx.cardview.widget.CardView>
+
+
+        <RelativeLayout
+            android:id="@+id/coaches_right_panel_card_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/coaches_left_panel_card_layout">
+
+            <TextView
+                android:id="@+id/fc_coach_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:maxLines="1"
+                android:textColor="@color/fighting_choice_orange"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/fc_coach_speciality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fc_coach_name"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:text="May 23, 2015"
+                android:textColor="@color/fighting_choice_orange_light"
+                android:textSize="13dp" />
+
+
+            <TextView
+                android:id="@+id/fc_coach_speciality_achievement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fc_coach_speciality"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:text="May 23, 2015"
+                android:textColor="@color/fighting_choice_orange_light"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/fc_coach_speciality_future_events"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fc_coach_speciality_achievement"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:text="May 23, 2015"
+                android:textColor="@color/fighting_choice_orange_light"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/fc_coach_more_details"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="132dp"
+            android:background="@drawable/button_bg_border"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="More Info"
+            android:textColor="@color/fighting_choice_black_gray" />
+
+        <!--ToDo This view is created and will be show only to premium user-->
+
+        <Button
+            android:id="@+id/fc_coach_book_appointment"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="210dp"
+            android:layout_marginTop="132dp"
+            android:background="@drawable/button_bg_border"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Book Trial"
+            android:textColor="@color/fighting_choice_black_gray" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
