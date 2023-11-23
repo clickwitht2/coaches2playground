@@ -13,7 +13,18 @@
         android:theme="@style/Theme.FightingChoice"
         tools:targetApi="31">
         <activity
-            android:name="com.t2graphy.root.coaches.CoachesViewActivity"
+            android:name="com.t2graphy.root.coaches.activity.CoachesQueryScreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:label="@string/title_activity_coaches_query_screen"
+            android:theme="@style/Theme.FightingChoice.Fullscreen" />
+        <activity
+            android:name="com.t2graphy.root.coaches.activity.CoachesDetailedActivity"
+            android:exported="false"
+            android:label="@string/title_activity_coaches_detailed"
+            android:theme="@style/Theme.FightingChoice.NoActionBar" />
+        <activity
+            android:name="com.t2graphy.root.coaches.activity.CoachesViewActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,17 +32,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name="com.t2graphy.root.clubs.ClubsRootViewActivity"
             android:exported="true">
-            <!--<intent-filter>
+
+            <!--
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+            </intent-filter>
+            -->
         </activity>
-
     </application>
 
 </manifest>

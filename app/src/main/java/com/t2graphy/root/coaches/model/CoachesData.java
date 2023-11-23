@@ -1,4 +1,4 @@
-package com.t2graphy.root.coaches;
+package com.t2graphy.root.coaches.model;
 
 
 public class CoachesData {

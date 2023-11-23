@@ -1,4 +1,4 @@
-package com.t2graphy.root.coaches;
+package com.t2graphy.root.coaches.view;
 
 import android.content.Context;
 import android.util.Log;
@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.t2graphy.coaches.R;
+import com.t2graphy.root.coaches.model.CoachesData;
 
 import java.util.Collections;
 import java.util.List;
