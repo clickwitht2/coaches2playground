@@ -1,4 +1,4 @@
-package com.t2graphy.coaches.coaches;
+package com.t2graphy.root.coaches;
 
 import android.view.View;
 import android.widget.ImageView;
@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.imageview.ShapeableImageView;
 import com.t2graphy.coaches.R;
+
 
 public class CoachesViewHolder extends RecyclerView.ViewHolder {
     ShapeableImageView coachImage;

@@ -1,4 +1,4 @@
-package com.t2graphy.coaches;
+package com.t2graphy.root;
 
 import org.junit.Test;
 

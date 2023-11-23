@@ -13,23 +13,23 @@
         android:theme="@style/Theme.FightingChoice"
         tools:targetApi="31">
         <activity
-            android:name=".coaches.CoachesViewActivity"
-            android:exported="true">
-            <!--<intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
-        </activity>
-
-        <activity
-            android:name=".clubs.ClubsRootViewActivity"
+            android:name="com.t2graphy.root.coaches.CoachesViewActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.t2graphy.root.clubs.ClubsRootViewActivity"
+            android:exported="true">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
         </activity>
 
     </application>

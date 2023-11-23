@@ -1,4 +1,4 @@
-package com.t2graphy.coaches.clubs;
+package com.t2graphy.root.clubs;
 
 import android.view.View;
 import android.widget.ImageView;

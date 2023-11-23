@@ -1,4 +1,4 @@
-package com.t2graphy.coaches.coaches;
+package com.t2graphy.root.coaches;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -7,7 +7,6 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.t2graphy.coaches.R;
 
 import java.util.ArrayList;
