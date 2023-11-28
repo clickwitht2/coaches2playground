@@ -15,6 +15,7 @@ import com.t2graphy.coaches.R;
 import com.t2graphy.root.coaches.activity.CoachesDetailedActivity;
 import com.t2graphy.root.coaches.activity.CoachesQueryScreenActivity;
 import com.t2graphy.root.coaches.model.CoachesData;
+import com.t2graphy.root.coaches.model.CoachesGenericStaticData;
 
 import java.util.Collections;
 import java.util.List;
@@ -71,6 +72,7 @@ public class CoachesViewAdapter extends RecyclerView.Adapter<CoachesViewHolder> 
                 intent.putExtra("FC_Coach_Speciality", coachesDataList.get(viewPosition).coachSpeciality);
                 intent.putExtra("FC_Coach_Special_Events", coachesDataList.get(viewPosition).coachPersonalExperienceDetail);
                 intent.putExtra("FC_Coach_Future_Events", coachesDataList.get(viewPosition).coachTopFiveEvents);
+                intent.putExtra("FC_Coach_Video_Link", coachesDataList.get(viewPosition).coachTopFiveEvents);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 mContext.startActivity(intent);
             }
@@ -86,6 +88,7 @@ public class CoachesViewAdapter extends RecyclerView.Adapter<CoachesViewHolder> 
                 intent.putExtra("FC_Coach_Speciality", coachesDataList.get(viewPosition).coachSpeciality);
                 intent.putExtra("FC_Coach_Special_Events", coachesDataList.get(viewPosition).coachPersonalExperienceDetail);
                 intent.putExtra("FC_Coach_Future_Events", coachesDataList.get(viewPosition).coachTopFiveEvents);
+                intent.putExtra("FC_Coach_Video_Link", coachesDataList.get(viewPosition).coachTopFiveEvents);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 mContext.startActivity(intent);
             }
@@ -96,11 +99,12 @@ public class CoachesViewAdapter extends RecyclerView.Adapter<CoachesViewHolder> 
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(mContext, CoachesDetailedActivity.class);
-                intent.putExtra("FC_Coach_Image", coachesDataList.get(viewPosition).coachImage);
-                intent.putExtra("FC_Coach_Name", coachesDataList.get(viewPosition).coachName);
-                intent.putExtra("FC_Coach_Speciality", coachesDataList.get(viewPosition).coachSpeciality);
-                intent.putExtra("FC_Coach_Special_Events", coachesDataList.get(viewPosition).coachPersonalExperienceDetail);
-                intent.putExtra("FC_Coach_Future_Events", coachesDataList.get(viewPosition).coachTopFiveEvents);
+                intent.putExtra(CoachesGenericStaticData.FC_COACH_IMAGE, coachesDataList.get(viewPosition).coachImage);
+                intent.putExtra(CoachesGenericStaticData.FC_COACH_NAME, coachesDataList.get(viewPosition).coachName);
+                intent.putExtra(CoachesGenericStaticData.FC_COACH_SPECIALITY, coachesDataList.get(viewPosition).coachSpeciality);
+                intent.putExtra(CoachesGenericStaticData.FC_COACH_SPECIAL_EVENTS, coachesDataList.get(viewPosition).coachPersonalExperienceDetail);
+                intent.putExtra(CoachesGenericStaticData.FC_COACH_TOP_FIVE_EVENTS, coachesDataList.get(viewPosition).coachTopFiveEvents);
+                intent.putExtra("FC_Coach_Video_Link", coachesDataList.get(viewPosition).coachTopFiveEvents);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 mContext.startActivity(intent);
             }
