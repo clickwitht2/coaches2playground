@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    app:cardBackgroundColor="@color/fighting_choice_black_gray"
+    app:cardCornerRadius="32dp"
+    app:cardElevation="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true">
+
+        <Button
+            android:id="@+id/fc_more_details_button"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="132dp"
+            android:background="@drawable/button_bg_border"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Coach Info"
+            android:textColor="@color/fighting_choice_black_gray" />
+
+        <!-- Will be enabled for Premium Users -->
+
+        <Button
+            android:id="@+id/fc_book_appointment_button"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginStart="210dp"
+            android:layout_marginTop="132dp"
+            android:background="@drawable/button_bg_border"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Call"
+            android:textColor="@color/fighting_choice_black_gray" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
