@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.Coaches" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
@@ -23,8 +23,17 @@
     <style name="Theme.Coaches" parent="Base.Theme.Coaches" />
 
     <style name="Theme.FightingChoice.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">#121212</item>
+        <item name="colorOnPrimary">#212121</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/fighting_choice_orange</item>
+        <item name="colorSecondaryVariant">@color/fighting_choice_orange_light</item>
+        <item name="colorOnSecondary">@color/fighting_choice_orange_light</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:navigationBarColor">?attr/colorPrimaryVariant</item>
     </style>
 
     <style name="Theme.FightingChoice.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
@@ -37,6 +46,18 @@
         </item>
         <item name="android:windowActionBarOverlay">true</item>
         <item name="android:windowBackground">@null</item>
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">#121212</item>
+        <item name="colorOnPrimary">#212121</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/fighting_choice_orange</item>
+        <item name="colorSecondaryVariant">@color/fighting_choice_orange_light</item>
+        <item name="colorOnSecondary">@color/fighting_choice_orange_light</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:navigationBarColor">?attr/colorPrimaryVariant</item>
     </style>
 
     <style name="ThemeOverlay.Coaches.FullscreenContainer" parent="">

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/coaches_background_theme_1"
-    tools:context=".coaches.CoachesViewActivity">
+    tools:context="com.t2graphy.root.coaches.activity.CoachesViewActivity">
 
     <TextView
         android:id="@+id/text_coach"
@@ -14,9 +14,9 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:textColor="@color/fighting_choice_orange"
-        android:text="Welcome to our coaches section"
+        android:text="Here are our coaches!"
         android:textAlignment="center"
+        android:textColor="@color/fighting_choice_orange"
         android:textSize="20dp" />
 
     <LinearLayout

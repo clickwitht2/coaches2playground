@@ -7,9 +7,10 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import com.t2graphy.coaches.R;
-import com.t2graphy.root.coaches.view.CoachesViewAdapter;
 import com.t2graphy.root.coaches.model.CoachesData;
+import com.t2graphy.root.coaches.controller.CoachesViewAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,6 +52,11 @@ public class CoachesViewActivity extends AppCompatActivity {
     }
 
 
+    /**
+     * ToDo As per Solid principle, this class should not load data. as it will get more responsibility
+     * You already wrote Data layer in different project structure, review that part of code, optimized it if needed and then do the integration
+     * by doing this you will be able to validate unit test part and behaviour part
+     **/
     private List<CoachesData> getData() {
         List<CoachesData> list = new ArrayList<>();
         list.add(new CoachesData(R.drawable.coaches_hasan_muay_thai_kick_boxing,

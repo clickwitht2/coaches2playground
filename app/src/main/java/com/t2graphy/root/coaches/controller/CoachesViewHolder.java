@@ -1,4 +1,4 @@
-package com.t2graphy.root.coaches.view;
+package com.t2graphy.root.coaches.controller;
 
 import android.view.View;
 import android.widget.ImageView;

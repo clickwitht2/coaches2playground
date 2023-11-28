@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/coaches_background_theme_2"
-    tools:context=".clubs.ClubsRootViewActivity">
+    tools:context="com.t2graphy.root.clubs.ClubsRootViewActivity">
 
     <TextView
         android:id="@+id/text_clubs"

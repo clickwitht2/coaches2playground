@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FightingChoice"
         tools:targetApi="31">
+
+
         <activity
             android:name="com.t2graphy.root.coaches.activity.CoachesQueryScreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -31,18 +33,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name="com.t2graphy.root.clubs.ClubsRootViewActivity"
-            android:exported="true">
-
-            <!--
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            -->
         </activity>
     </application>
 

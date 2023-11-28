@@ -2,13 +2,13 @@ package com.t2graphy.root.coaches.model;
 
 
 public class CoachesData {
-    Integer coachImage;
-    String coachName;
-    String coachSpeciality;
+    public Integer coachImage;
+    public String coachName;
+    public String coachSpeciality;
     Float rating;
 
-    String coachPersonalExperienceDetail;
-    String coachTopFiveEvents;
+    public String coachPersonalExperienceDetail;
+    public String coachTopFiveEvents;
     String coachIntroGIFPath;
 
     public CoachesData(Integer coachImage, String coachName, String coachSpeciality, Float rating,
