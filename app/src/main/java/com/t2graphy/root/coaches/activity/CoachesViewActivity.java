@@ -60,21 +60,21 @@ public class CoachesViewActivity extends AppCompatActivity {
     private List<CoachesData> getData() {
         List<CoachesData> list = new ArrayList<>();
         list.add(new CoachesData(R.drawable.coaches_hasan_muay_thai_kick_boxing,
-                "Name : Hassan S1r",
-                "Speciality : Kick Boxing", 4.8F, "Experience : 7 years",
-                "book one to one session", ""));
+                "Name : Mohit Baliyaan",
+                "Speciality : Boxing", 4.8F, "Experience : 4 years",
+                "Government Certified Boxing ", ""));
         list.add(new CoachesData(R.drawable.coaches_lalit_kick_boxing,
                 "Name : Lalit S1r",
-                "Speciality Kick Boxing", 4.7F, "Experience : 3 years",
-                "book one to one session", ""));
+                "Speciality : Wushu, Kick Boxing", 4.7F, "Experience : 3 years",
+                "Got MMA Contract", ""));
         list.add(new CoachesData(R.drawable.coaches_mohan_wresting,
                 "Name : Mohan Sir",
-                "Speciality : Kick Boxing", 4.7F, "Experience : 5 years",
-                "book one to one session", ""));
+                "Speciality : Wresting, Grappling", 4.7F, "Experience : 7 years",
+                "Trained Indian Army SMC \n Trained CBSE Sport School Students", ""));
         list.add(new CoachesData(R.drawable.coaches_malkeet_bjj_grapling,
                 "Name : Malkreet Brawler",
                 "Speciality : MMA, Grappling", 4.8F, "Experience : 7 years",
-                "book one to one session", ""));
+                "Book one to one session", ""));
 
         return list;
     }

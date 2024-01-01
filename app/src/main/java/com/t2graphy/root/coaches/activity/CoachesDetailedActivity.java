@@ -1,6 +1,7 @@
 package com.t2graphy.root.coaches.activity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,7 +14,7 @@ import java.util.Objects;
 
 public class CoachesDetailedActivity extends AppCompatActivity {
 
-
+    public static String TAG = "CoachesDetailedActivity";
     ShapeableImageView coachImageView;
     TextView coachNameView;
     TextView coachSpecialityView;
@@ -62,12 +63,12 @@ public class CoachesDetailedActivity extends AppCompatActivity {
             coachTopFiveEvents = extras.getString(CoachesGenericStaticData.FC_COACH_TOP_FIVE_EVENTS);
             coachPersonalExperienceDetail = extras.getString(CoachesGenericStaticData.FC_COACH_SPECIAL_EVENTS);
             coachDetailsPageVideoPath = extras.getString(CoachesGenericStaticData.FC_COACH_NAME);
-
-            coachImageView.setImageResource(coachImageResourcePath);
+            Log.d(TAG,"coachName "+coachName + " coachImagePath "+coachImageResourcePath);
             coachNameView.setText(coachName);
             coachSpecialityView.setText(coachSpeciality);
             fcCoachTopFiveEventsView.setText(coachTopFiveEvents);
             fcCoachSpecialityAchievementView.setText(coachPersonalExperienceDetail);
+            coachImageView.setImageResource(coachImageResourcePath);
         }
     }
 }

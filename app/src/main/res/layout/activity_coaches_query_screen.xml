@@ -20,6 +20,11 @@
 
     <!-- A generic Calender VIew in needed for appointment -->
 
+    <CalendarView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fullscreen_content" />
+
 
     <!-- A generic queries. Recycler View question answer structure-->
 

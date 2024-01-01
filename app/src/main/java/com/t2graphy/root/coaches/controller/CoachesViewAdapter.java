@@ -24,6 +24,7 @@ public class CoachesViewAdapter extends RecyclerView.Adapter<CoachesViewHolder> 
 
     List<CoachesData> coachesDataList = Collections.emptyList();
     private final Context mContext;
+    public static String TAG = "CoachesViewAdapter";
 
     public CoachesViewAdapter(List<CoachesData> list, Context context, View.OnClickListener listener) {
         coachesDataList = list;
@@ -66,6 +67,7 @@ public class CoachesViewAdapter extends RecyclerView.Adapter<CoachesViewHolder> 
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.d(TAG,"inside card view click ");
                 Intent intent = new Intent(mContext, CoachesDetailedActivity.class);
                 intent.putExtra("FC_Coach_Image", coachesDataList.get(viewPosition).coachImage);
                 intent.putExtra("FC_Coach_Name", coachesDataList.get(viewPosition).coachName);
@@ -82,6 +84,7 @@ public class CoachesViewAdapter extends RecyclerView.Adapter<CoachesViewHolder> 
         viewHolder.itemView.findViewById(R.id.fc_coach_book_appointment).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.d(TAG,"inside appointment view ");
                 Intent intent = new Intent(mContext, CoachesQueryScreenActivity.class);
                 intent.putExtra("FC_Coach_Image", coachesDataList.get(viewPosition).coachImage);
                 intent.putExtra("FC_Coach_Name", coachesDataList.get(viewPosition).coachName);
@@ -98,6 +101,7 @@ public class CoachesViewAdapter extends RecyclerView.Adapter<CoachesViewHolder> 
         viewHolder.itemView.findViewById(R.id.fc_coach_more_details).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.d(TAG,"Inside more button click");
                 Intent intent = new Intent(mContext, CoachesDetailedActivity.class);
                 intent.putExtra(CoachesGenericStaticData.FC_COACH_IMAGE, coachesDataList.get(viewPosition).coachImage);
                 intent.putExtra(CoachesGenericStaticData.FC_COACH_NAME, coachesDataList.get(viewPosition).coachName);

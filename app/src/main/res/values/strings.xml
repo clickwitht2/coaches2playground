@@ -95,7 +95,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_coaches_query_screen">CoachesQueryScreenActivity</string>
     <string name="dummy_button">ChooseToFight</string>
-    <string name="dummy_content">Fighting Choice/n/nChoose to Fight</string>
+    <string name="dummy_content">Fighting Choice\nChoose to Fight</string>
     <string name="title_activity_coaches_root_view">Fighting Choice Coaches</string>
     <string name="coaches_root_view_more_button">Call</string>
     <string name="coaches_root_view_content">DUMMY\nCONTENT</string>

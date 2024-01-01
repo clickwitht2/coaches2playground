@@ -13,8 +13,7 @@
         android:layout_height="match_parent"
         android:layout_centerVertical="true">
 
-        <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
+        <androidx.cardview.widget.CardView
             android:id="@+id/coaches_left_panel_card_layout"
             android:layout_width="100dp"
             android:layout_height="match_parent"
@@ -111,7 +110,7 @@
             android:layout_marginTop="132dp"
             android:background="@drawable/button_bg_border"
             android:fontFamily="sans-serif-condensed-medium"
-            android:text="More Info"
+            android:text="More..."
             android:textColor="@color/fighting_choice_black_gray" />
 
         <!--ToDo This view is created and will be show only to premium user-->

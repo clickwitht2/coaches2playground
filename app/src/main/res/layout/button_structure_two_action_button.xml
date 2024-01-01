@@ -34,7 +34,7 @@
             android:layout_marginTop="132dp"
             android:background="@drawable/button_bg_border"
             android:fontFamily="sans-serif-condensed-medium"
-            android:text="Call"
+            android:text="Call..."
             android:textColor="@color/fighting_choice_black_gray" />
 
 
