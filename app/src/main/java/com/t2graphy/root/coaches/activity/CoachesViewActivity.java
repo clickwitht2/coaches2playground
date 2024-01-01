@@ -59,7 +59,7 @@ public class CoachesViewActivity extends AppCompatActivity {
      **/
     private List<CoachesData> getData() {
         List<CoachesData> list = new ArrayList<>();
-        list.add(new CoachesData(R.drawable.coaches_hasan_muay_thai_kick_boxing,
+        list.add(new CoachesData(R.drawable.coach_mohit ,
                 "Name : Mohit Baliyaan",
                 "Speciality : Boxing", 4.8F, "Experience : 4 years",
                 "Government Certified Boxing ", ""));
@@ -67,14 +67,18 @@ public class CoachesViewActivity extends AppCompatActivity {
                 "Name : Lalit S1r",
                 "Speciality : Wushu, Kick Boxing", 4.7F, "Experience : 3 years",
                 "Got MMA Contract", ""));
-        list.add(new CoachesData(R.drawable.coaches_mohan_wresting,
+        list.add(new CoachesData(R.drawable.coach_mohan_profile,
                 "Name : Mohan Sir",
-                "Speciality : Wresting, Grappling", 4.7F, "Experience : 7 years",
+                "Speciality : Wresting, Grappling", 4.7F, "Experience : 5 years",
                 "Trained Indian Army SMC \n Trained CBSE Sport School Students", ""));
         list.add(new CoachesData(R.drawable.coaches_malkeet_bjj_grapling,
                 "Name : Malkreet Brawler",
                 "Speciality : MMA, Grappling", 4.8F, "Experience : 7 years",
                 "Book one to one session", ""));
+        list.add(new CoachesData(R.drawable.sekhar_sir_profile,
+                "Name : Sekhar Sir",
+                "Speciality : Kick Boxing, Muay Thai", 4.7F, "Experience : 5 years",
+                "Trained CBSE Sport School Students", ""));
 
         return list;
     }

@@ -53,9 +53,16 @@ public class CoachesViewAdapter extends RecyclerView.Adapter<CoachesViewHolder> 
 
         // set the gif image of specific coach
 
-        if (position % 2 == 0) {
-            Glide.with(viewHolder.fcCoachIntroGif).load(R.drawable.coach_hasan).into(viewHolder.fcCoachIntroGif);
-        } else {
+        if (position == 0) {
+            Glide.with(viewHolder.fcCoachIntroGif).load(R.drawable.coach_mohit_gif).into(viewHolder.fcCoachIntroGif);
+        } else if (position == 1){
+            Glide.with(viewHolder.fcCoachIntroGif).load(R.drawable.coach_lalit_gif).into(viewHolder.fcCoachIntroGif);
+        } else if (position == 2){
+            Glide.with(viewHolder.fcCoachIntroGif).load(R.drawable.coach_mohan_gif).into(viewHolder.fcCoachIntroGif);
+        }else if (position == 3)
+        {
+            Glide.with(viewHolder.fcCoachIntroGif).load(R.drawable.malkeet_sir_gif).into(viewHolder.fcCoachIntroGif);
+        }else if (position == 4){
             Glide.with(viewHolder.fcCoachIntroGif).load(R.drawable.coach_sekhar_gif).into(viewHolder.fcCoachIntroGif);
         }
 
