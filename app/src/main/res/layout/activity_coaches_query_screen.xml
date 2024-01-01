@@ -1,9 +1,10 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/fighting_choice_black_gray"
-    tools:context="com.t2graphy.root.coaches.activity.CoachesQueryScreenActivity">
+    tools:context="com.t2graphy.root.coaches.activity.CoachesQueryScreenActivity"
+    android:orientation="vertical">
 
     <!-- The primary full-screen view. This can be replaced with whatever view
          is needed to present your content, e.g. VideoView, SurfaceView,
@@ -25,9 +26,7 @@
         android:id="@+id/faq_title_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/fullscreen_content_coach_name"
         android:layout_margin="10dp"
-        android:background="@color/fighting_choice_black_mat"
         android:text="Frequently asked questions"
         android:textColor="@color/fighting_choice_orange"
         android:textSize="20dp" />
@@ -39,15 +38,15 @@
     <LinearLayout
         android:id="@+id/faq_section_layout"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="210dp"
         android:layout_margin="10dp"
-        android:layout_below="@id/faq_title_text"
         android:orientation="vertical">
 
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:background="@color/fighting_choice_orange"
             android:text="Q : Do I need prior experience before joining combat sports"
@@ -56,7 +55,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
             android:background="@color/fighting_choice_black_mat"
             android:text="A : Not really, 80 percentage of our customer started combat sport for very first time "
             android:textColor="@color/fighting_choice_orange_light" />
@@ -65,6 +65,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
             android:background="@color/fighting_choice_orange"
             android:text="Q : I have around one year of experience in Boxing, how much time it will take me to participate in fight"
             android:textColor="@color/fighting_choice_black_mat" />
@@ -73,6 +74,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
             android:background="@color/fighting_choice_black_mat"
             android:text="A :That's great, it totally depends on one capacity, usually a beginner is able to take the first fight within three months "
             android:textColor="@color/fighting_choice_orange_light" />
@@ -86,7 +88,6 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/faq_section_layout"
         android:layout_marginTop="20dp"
         android:background="@color/fighting_choice_orange"
         android:text="Record Your Questions"
@@ -95,4 +96,4 @@
 
     <!-- A generic Action Button VIew in needed for appointment -->
 
-</RelativeLayout>
+</LinearLayout>
