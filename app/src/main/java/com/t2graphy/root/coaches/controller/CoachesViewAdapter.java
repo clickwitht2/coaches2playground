@@ -51,7 +51,7 @@ public class CoachesViewAdapter extends RecyclerView.Adapter<CoachesViewHolder> 
         viewHolder.fcCoachSpecialityAchievement.setText(coachesDataList.get(position).coachPersonalExperienceDetail);
         viewHolder.fcCoachSpecialityFutureEvents.setText(coachesDataList.get(position).coachTopFiveEvents);
 
-        // set the gif image of specific coach
+        // ToDo set the gif image of specific coach... do more optimization when data is read from tables.
 
         if (position == 0) {
             Glide.with(viewHolder.fcCoachIntroGif).load(R.drawable.coach_mohit_gif).into(viewHolder.fcCoachIntroGif);
