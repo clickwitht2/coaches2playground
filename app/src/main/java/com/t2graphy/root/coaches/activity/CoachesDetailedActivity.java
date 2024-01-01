@@ -26,11 +26,13 @@ public class CoachesDetailedActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_coaches_detailed);
-        coachImageView = (ShapeableImageView) findViewById(R.id.fc_coach_picture_circular);
-        coachNameView = (TextView) findViewById(R.id.fc_coach_name);
-        coachSpecialityView = findViewById(R.id.fc_coach_speciality);
-        fcCoachTopFiveEventsView = findViewById(R.id.fc_coach_speciality_future_events);
-        fcCoachSpecialityAchievementView = findViewById(R.id.fc_coach_speciality_achievement);
+        coachImageView = (ShapeableImageView) findViewById(R.id.item_fc_coach_picture_circular);
+        coachNameView = (TextView) findViewById(R.id.item_fc_coach_name);
+        coachSpecialityView = findViewById(R.id.item_fc_coach_speciality);
+        fcCoachTopFiveEventsView = findViewById(R.id.item_fc_coach_speciality_future_events);
+        fcCoachSpecialityAchievementView = findViewById(R.id.item_fc_coach_speciality_achievement);
+        Log.d("TAG","coachNameView "+coachNameView + " coachImageView " +coachImageView +
+                " fcCoachTopFiveEventsView "+fcCoachTopFiveEventsView);
 
         /*  This is being used to customized toolbar of Android
         // ToDo Better way : make your own bar. action bar and navigation bar.
