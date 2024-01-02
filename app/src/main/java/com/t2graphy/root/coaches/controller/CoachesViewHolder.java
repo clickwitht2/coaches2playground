@@ -1,6 +1,7 @@
 package com.t2graphy.root.coaches.controller;
 
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -19,6 +20,10 @@ public class CoachesViewHolder extends RecyclerView.ViewHolder {
     TextView fcCoachSpecialityAchievement;
     TextView fcCoachSpecialityFutureEvents;
     ImageView fcCoachIntroGif;
+
+    Button socialFirst;
+    Button socialSecond;
+    Button socialThird;
 
     public CoachesViewHolder(@NonNull View itemView) {
         super(itemView);

@@ -48,7 +48,7 @@ public class CoachesQueryScreenActivity extends AppCompatActivity {
             coachPersonalExperienceDetail = extras.getString(CoachesGenericStaticData.FC_COACH_SPECIAL_EVENTS);
             coachDetailsPageVideoPath = extras.getString(CoachesGenericStaticData.FC_COACH_NAME);
             Log.d(TAG,"coachName "+coachName + " coachImagePath "+coachImageResourcePath);
-            coachNameView.setText("Coach : "+coachName);
+            coachNameView.setText("Coach "+coachName);
 
         }
     }

@@ -126,7 +126,32 @@
             android:text="Book Trial"
             android:textColor="@color/fighting_choice_black_gray" />
 
+        <RelativeLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|right">
+        <Button
+            android:id="@+id/fc_coach_social_1"
+            android:layout_height="32dp"
+            android:layout_width="32dp"
+            android:gravity="bottom|right"
+            android:background="@drawable/app_youtube_media_social_youtube_icon"  />
 
+        <Button
+            android:id="@+id/fc_coach_social_2"
+            android:layout_height="32dp"
+            android:layout_width="32dp"
+            android:gravity="bottom|right"
+            android:layout_above="@id/fc_coach_social_1"
+            android:background="@drawable/apps_facebook_media_social_icon"  />
+
+        <Button
+            android:id="@+id/fc_coach_social_3"
+            android:layout_height="32dp"
+            android:layout_width="32dp"
+            android:gravity="bottom|right"
+            android:layout_above="@id/fc_coach_social_2"
+            android:background="@drawable/apps_instagram_media_social_icon"  />
+        </RelativeLayout>
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>
