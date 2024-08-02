@@ -25,14 +25,28 @@
             android:exported="false"
             android:label="@string/title_activity_coaches_detailed"
             android:theme="@style/Theme.FightingChoice.NoActionBar" />
+
         <activity
-            android:name="com.t2graphy.root.coaches.activity.CoachesViewActivity"
-            android:exported="true">
+            android:name="com.t2graphy.root.clubs.ClubsRootViewActivity"
+            android:exported="true"
+            android:label="@string/title_activity_club_detailed"
+            android:theme="@style/Theme.FightingChoice.NoActionBar">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.t2graphy.root.coaches.activity.CoachesViewActivity"
+            android:exported="true">
+            <!--<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
         </activity>
     </application>
 
